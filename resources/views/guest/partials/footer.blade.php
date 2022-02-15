@@ -1,6 +1,6 @@
-  {{-- <footer>
-    <div class="container footer-top">
-      <div class="col-1">
+  <footer>
+    {{-- <div class="container footer-top"> --}}
+      {{-- <div class="col-1">
         <div class="top">
           <h1>Dc Comics</h1>
             <ul>
@@ -88,7 +88,7 @@
       <div class="col-4">
         <img src="{{asset('img\dc-logo-bg.png')}}" alt="">
       </div>
-    </div>
+    </div> --}}
 
 
      <!-- SECONDA PARTE FOOTER -->
@@ -105,4 +105,4 @@
         <a href=""><img src="{{asset('img\footer-youtube.png')}}" alt="social logo"></a>
       </div>
     </div>
-  </footer> --}}
+  </footer> 
