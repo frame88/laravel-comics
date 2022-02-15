@@ -1,7 +1,11 @@
   <header>
+    {{-- <div class="container blue-line">
+      <span>dc power visa</span>
+      <span>additional dc site</span>
+    </div> --}}
     <div class="container center">
       <div class="left-header">
-        <img src="..\assets\img\dc-logo.png" alt="">
+        <img src="{{ asset ('img\dc-logo.png')}}" alt="logo_dc_navbar">
       </div>
       <div class="right-header">
         <ul>

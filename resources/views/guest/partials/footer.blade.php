@@ -1,4 +1,4 @@
-  <footer>
+  {{-- <footer>
     <div class="container footer-top">
       <div class="col-1">
         <div class="top">
@@ -86,7 +86,7 @@
          </ul>
       </div>
       <div class="col-4">
-        <img src="..\assets\img\dc-logo-bg.png" alt="">
+        <img src="{{asset('img\dc-logo-bg.png')}}" alt="">
       </div>
     </div>
 
@@ -98,11 +98,11 @@
       </div>
       <div class="social">
         <span>follow us</span>
-        <a href=""><img src="..\assets\img\footer-facebook.png" alt="social logo"></a>
-        <a href=""><img src="..\assets\img\footer-periscope.png" alt="social logo"></a>
-        <a href=""><img src="..\assets\img\footer-pinterest.png" alt="social logo"></a>
-        <a href=""><img src="..\assets\img\footer-twitter.png" alt="social logo"></a>
-        <a href=""><img src="..\assets\img\footer-youtube.png" alt="social logo"></a>
+        <a href=""><img src="{{asset('img\footer-facebook.png')}}" alt="social logo"></a>
+        <a href=""><img src="{{asset('img\footer-periscope.png')}}" alt="social logo"></a>
+        <a href=""><img src="{{asset('img\footer-pinterest.png')}}" alt="social logo"></a>
+        <a href=""><img src="{{asset('img\footer-twitter.png')}}" alt="social logo"></a>
+        <a href=""><img src="{{asset('img\footer-youtube.png')}}" alt="social logo"></a>
       </div>
     </div>
-  </footer>
+  </footer> --}}
