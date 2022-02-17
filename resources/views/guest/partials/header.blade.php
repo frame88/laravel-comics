@@ -10,7 +10,7 @@
       <div class="right-header">
         <ul>
       <li>
-        <a href="">Characters</a>
+        <a href="{{ route('characters') }}">Characters</a>
       </li>
       <li>
         <a href="">Comics</a>
