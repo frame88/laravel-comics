@@ -19,41 +19,41 @@ Route::get('/', function () {
 
 // NAVBAR
 Route::get('/characters', function () {
-    return view('guest.characters');
+    return view('characters');
 })-> name('characters');
 
 Route::get('/comics', function () {
-    return view('guest.comics');
+    return view('comics');
 })-> name('comics');
 
 Route::get('/movies', function () {
-    return view('guest.movies');
+    return view('movies');
 })-> name('movies');
 
 Route::get('/tv', function () {
-    return view('guest.tv');
+    return view('tv');
 })-> name('tv');
 
 Route::get('/games', function () {
-    return view('guest.games');
+    return view('games');
 })-> name('games');
 
 Route::get('/collectibles', function () {
-    return view('guest.collectibles');
+    return view('collectibles');
 })-> name('collectibles');
 
 Route::get('/videos', function () {
-    return view('guest.videos');
+    return view('videos');
 })-> name('videos');
 
 Route::get('/fans', function () {
-    return view('guest.fans');
+    return view('fans');
 })-> name('fans');
 
 Route::get('/news', function () {
-    return view('guest.news');
+    return view('news');
 })-> name('news');
 
 Route::get('/shop', function () {
-    return view('guest.shop');
+    return view('shop');
 })-> name('shop');
