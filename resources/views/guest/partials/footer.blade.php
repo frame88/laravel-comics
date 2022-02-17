@@ -1,6 +1,6 @@
-  <footer>
-    {{-- <div class="container footer-top"> --}}
-      {{-- <div class="col-1">
+  {{-- <footer>
+    <div class="container footer-top">
+      <div class="col-1">
         <div class="top">
           <h1>Dc Comics</h1>
             <ul>

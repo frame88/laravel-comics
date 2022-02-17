@@ -8,7 +8,7 @@
     <title>@yield('documentTitle')</title>
 </head>
 <body>
-    <div class="container prova">
+    <div class="container-prova">
         @include('guest.partials.header')
         @yield('content')
         @include('guest.partials.footer')

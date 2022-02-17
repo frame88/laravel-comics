@@ -5,7 +5,6 @@
 @endsection
     
 @section('content')
-<h1>ciao</h1>
 {{-- <!DOCTYPE html>
 <html lang="en">
 <head>
