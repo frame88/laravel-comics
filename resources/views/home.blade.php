@@ -1,36 +1,31 @@
 @extends('guest.layout.base')
 
 @section('documentTitle')
-    Home
+    {{$nomePagina}}
 @endsection
-    
+
 @section('content')
-    <main>
-        <h1>Pagina principale</h1>
-      {{-- <div class="top">
-          <div class="jumbotron">
-              <div class="container relative">
-                  <div class="title">
-                    <h2>Current Series</h2>
-                  </div>
-              </div>
-          </div>
-          
-          <div class="top-b">
-              <div class="container">
-              <div class="products">
-                  <Product
-                  v-for="(product, index) in products" :key="index"
-                  :src="product.thumb"
-                  :alt="product.series"
-                  :series="product.series"
-                  />
-              </div>
-          </div>
-          </div>
-      </div>
-      <div class="bottom">
-          <div class="container">
+    <div class="bg-prod">
+        <div class="container-90 relative">
+            <div class="title jumbo-text">
+                <h2>Current Series</h2>
+            </div>
+            <div class="products">
+                @foreach($comics as $comic)
+                <div class="product">
+                    <div class="thumb">
+                        <img src="{{$comic['thumb']}}" alt="">
+                    </div>
+                    <div class="comic-name">
+                        <h2><a href="{{route('comic', $comic['id'])}}">{{$comic['title']}}</a></h2>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+          <div class="container-90">
               <ul>
                   <li>
                       <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="Digital comics">
@@ -53,10 +48,10 @@
                       <span>dc power visa</span>
                   </li>
               </ul>
-          </div>
-      </div> --}}
-  </main>
+            </div>
+        </div>
+@endsection
 
-</body>
-</html>
+@section('scripts')
+    <script src="{{asset('js/app.js')}}"></script>
 @endsection

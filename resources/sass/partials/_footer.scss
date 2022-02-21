@@ -1,85 +1,87 @@
-
-  .footer-top {
-    height: 55vh;
-    display: flex;
-    // background-image: url({{asset('img/footer-bg.jpg')}});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-
-  h1 {
-    color: white;
-    font-size: 120%;
-    padding-top: 1em;
-    padding-bottom: 1em;
-
-  }
-
-  ul {
-    li {
-      list-style: none;
-      a {
-        color: gray;
+ul{
+        list-style: none;
+    }
+    a{
         text-decoration: none;
-        text-transform: capitalize;
-      }
+        color: grey;
     }
-  }
-
-
-  .col-1, .col-2, .col-3 {
-    padding-left: 4em;
-    padding-top: 2em;
-  }
-
-  .col-1 .bottom {
-    padding-top: 2em;
-  }
-
-  // dA RIVEDERE 
-    .col-4 {
-      padding-right: 4em;
-      margin-left: 12em;
-      position: relative;
-      img {
-        position: absolute;
-        top: -25px;
-        bottom: 25px;
-
-      }
+    h1{
+        color: white;
+        margin: 5px 0;
+        text-transform: uppercase;
     }
-  
-  .contatti {
-    background-color: rgb(59, 59, 59);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
-  }
-
-  .sign, .social {
-    span {
-      color: $bluemain;
-      font-weight: bold;
-      align-self: center;
+    .footer-top{
+        height: 400px;
+        background-image: url('../../../public/img/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        .big-col-sx{
+            width: 50%;
+            padding: 0 20px;
+            .footer-menu{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                gap: 40px;
+            }
+        }
+        .logo{
+            top: -25px;
+            right: 0;
+            position: absolute;
+            img{
+                position: absolute;
+                top: -68px;
+                right: 55px;
+                height: 450px;
+            }
+        }
     }
-  }
-
-  .sign {
-    padding-left: 4em;
-    a {
-      color: white;
-      border: 3px solid $bluemain;
-      padding: 0.5em;
-      text-decoration: none;
+    .footer-bottom{
+        background-color: #303030;
+        padding: 30px 0;
     }
-  }
-
-  .social {
-    padding-right: 4em;
-    a, span {
-      margin: 0.3em;
+    .footer-end{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #button{
+            font-size: 1.3em;
+            color: white;
+            padding: 10px;
+            border: 3px solid #0282F9;
+            &:hover{
+                background-color: #0282F9;
+            }
+        }
+        .social{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            h3{
+                color: #0282F9;
+                text-transform: uppercase;
+            }
+            .icons{
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                cursor: pointer;
+            }
+        }
     }
-  }
 
+    .footer-menu{
+        li{
+            margin-bottom: 5px;
+            a{
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+    }
